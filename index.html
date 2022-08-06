@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
 
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- google fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;600;800&display=swap"
@@ -31,7 +34,7 @@
 <body>
 
     <header class="py-3">
-        <div class="top-nav">
+        <div class="top-nav" data-aos="fade-up">
             <div class="container">
                 <nav class="navbar navbar-expand-lg bg-dark py-3 navbar-dark rounded-pill">
                     <div class="container-fluid px-5">
@@ -60,6 +63,28 @@
                             </ul>
                             <form class="d-flex" role="search">
                                 <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+
+                                <div class="icons d-flex justify-content-center d-block d-lg-none align-items-center">
+                                    <a href="" class="icon text-white text-decoration-none">
+                                        <i class="fab fa-instagram fs-5 mx-2"></i>
+                                    </a>
+                                    <a href="" class="icon text-white text-decoration-none">
+                                        <i class="fab fa-twitter fs-5 mx-2"></i>
+                                    </a>
+                                    <a href="" class="icon text-white text-decoration-none">
+                                        <i class="fab fa-linkedin fs-5 mx-2"></i>
+                                    </a>
+                                    <a href="" class="icon text-white text-decoration-none">
+                                        <i class="fab fa-tiktok fs-5 mx-2"></i>
+                                    </a>
+                                    <a href="" class="icon text-white text-decoration-none">
+                                        <i class="fab fa-facebook-f fs-5 mx-2"></i>
+                                    </a>
+                                    <a href="" class="icon text-white text-decoration-none">
+                                        <i class="fab fa-youtube fs-5 mx-2"></i>
+                                    </a>
+                                </div>
+
                                 <a href="" class="btn btn-light px-4 rounded-pill">
                                     Get Flowsy
                                 </a>
@@ -74,13 +99,13 @@
         <div class="container">
             <div class="content">
                 <div class="col-md-6">
-                    <h1 class="main-title fw-semibold text-white">
+                    <h1 class="main-title fw-semibold text-white" data-aos="fade-up">
                         Helping you find your flow
                     </h1>
-                    <p class="fs-20 text-white">
+                    <p class="fs-20 text-white" data-aos="fade-up">
                         Learn meditation for free with Flowsy.
                     </p>
-                    <a href="" class="btn btn-light px-5 py-3 rounded-pill">
+                    <a href="" class="btn btn-light px-5 py-3 rounded-pill" data-aos="fade-up">
                         Download iOS App
                     </a>
                 </div>
@@ -89,11 +114,13 @@
 
         <div class="container position-relative">
             <div class="bottom">
-                <button class="btn btn-outline-light border-0 rounded-pill">
+                <button class="btn btn-outline-light border-0 rounded-pill audioPlayer paused" data-aos="fade-up">
                     <i class="bi bi-play-circle-fill me-2"></i> Play Teaser
                 </button>
 
-                <div class="text-center w-100">
+                <audio id="audio" src="audios/ocean.mp3" loop></audio>
+
+                <div class="text-center w-100" data-aos="fade-up">
                     <a href="" class="text-white fs-3">
                         <i class="bi bi-chevron-down"></i>
                     </a>
@@ -107,14 +134,14 @@
     <section class="explore py-5">
         <div class="container">
             <div class="text-center">
-                <h4 class="w-75 mx-auto">
+                <h4 class="w-75 mx-auto" data-aos="fade-up">
                     Flowsy is on a mission to improve your health and happiness. Our award winning meditation app has a
                     collection of guided meditations and soundscapes to help you get started.
                 </h4>
             </div>
 
-            <h2 class="mt-4">Explore</h2>
-            <div class="slider">
+            <h2 class="mt-4" data-aos="fade-up">Explore</h2>
+            <div class="slider" data-aos="fade-up">
                 <div class="slide p-2">
                     <div class="card bg-transparent border-0 position-relative">
                         <img src="img/1.png" class="img-fluid card-img-top" alt="">
@@ -222,32 +249,32 @@
         <div class="container">
             <div class="card pt-5 px-5">
                 <div class="text-center">
-                    <h3 class="mb-4">Learn Meditation</h3>
-                    <img src="img/app1.png" class="img-fluid" alt="">
+                    <h3 class="mb-4" data-aos="fade-up">Learn Meditation</h3>
+                    <img src="img/app1.png" class="img-fluid" alt="" data-aos="fade-up">
                 </div>
             </div>
             <div class="row my-4 g-3">
                 <div class="col-md-6">
                     <div class="card pt-5 px-5">
                         <div class="text-center">
-                            <h3 class="mb-4">Save favourites</h3>
-                            <img src="img/app2.png" class="img-fluid" alt="">
+                            <h3 class="mb-4" data-aos="fade-up">Save favourites</h3>
+                            <img src="img/app2.png" class="img-fluid" alt="" data-aos="fade-up">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card pt-5 px-5">
                         <div class="text-center">
-                            <h3 class="mb-4">Set sleep timer</h3>
-                            <img src="img/app3.png" class="img-fluid" alt="">
+                            <h3 class="mb-4" data-aos="fade-up">Set sleep timer</h3>
+                            <img src="img/app3.png" class="img-fluid" alt="" data-aos="fade-up">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card mt-4 px-5">
                 <div class="text-center">
-                    <h3 class="mb-4">Listen anywhere</h3>
-                    <img src="img/app4.png" class="img-fluid" alt="">
+                    <h3 class="mb-4" data-aos="fade-up">Listen anywhere</h3>
+                    <img src="img/app4.png" class="img-fluid" alt="" data-aos="fade-up">
                 </div>
             </div>
         </div>
@@ -258,10 +285,10 @@
     <section class="ratings py-5">
         <div class="container">
             <div class="text-center">
-                <h2 class="">What people are saying?</h2>
+                <h2 class="" data-aos="fade-up">What people are saying?</h2>
             </div>
 
-            <div class="slider mt-4">
+            <div class="slider1 mt-4" data-aos="fade-up">
                 <div class="slide p-3">
                     <div class="card rounded shadow border-0">
                         <div class="card-body">
@@ -442,18 +469,388 @@
         </div>
     </section>
 
+    <!-- get premium -->
+    <section class="premium py-5">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-white" data-aos="fade-up">
+                    Get Premium
+                </h2>
+                <p class="text-white" data-aos="fade-up">
+                    A free 7 day trial for premium and get unlimited access to everything!
+                </p>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <form action="">
+                    <div class="radio" data-aos="fade-up">
+                        <label>
+                            <input type="radio" name="radio" value="">
 
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+                            <div class="d-flex justify-content-between align-items-center radioBtn">
+                                <span class="text-white text-start d-block">
+                                    <p class="mb-1">
+                                        <img src="img/flower.png" class="img-fluid" alt=""> Flowsy Annual
+                                    </p>
+                                    <h5>12 months for £39.99</h5>
+                                    <p class="fs-14 text-muted mb-0">
+                                        First 7 days free, (£3.33/month) paid annually
+                                    </p>
+                                </span>
+                                <span class="radio-custom">
+                                    <div class="inner"></div>
+                                </span>
+                            </div>
+                        </label>
+                    </div>
 
-    <!-- slick -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+                    <div class="radio mt-3" data-aos="fade-up">
+                        <label>
+                            <input type="radio" name="radio" value="">
 
-    <!-- main js -->
-    <script src="js/main.js"></script>
+                            <div class="d-flex justify-content-between align-items-center radioBtn">
+                                <span class="text-white text-start d-block">
+                                    <p class="mb-1">
+                                        <img src="img/flower.png" class="img-fluid" alt=""> Flowsy Monthly
+                                    </p>
+                                    <h5>7 days free, then £5.99/month</h5>
+                                    <p class="fs-14 text-muted mb-0">
+                                        First 7 days free, then £5.99 paid monthly
+                                    </p>
+                                </span>
+                                <span class="radio-custom">
+                                    <div class="inner"></div>
+                                </span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <button class="btn btn-light w-50 mt-4" data-aos="fade-up">
+                        Try It Free
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- faq -->
+    <section class="faq py-5">
+        <div class="container">
+            <div class="text-center">
+                <h2 data-aos="fade-up">
+                    Frequently Asked Questions
+                </h2>
+            </div>
+
+            <div class="row mt-4" data-aos="fade-up">
+                <div class="col-md-6 offset-md-3">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is Flowsy?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laborum quo earum
+                                    nihil eveniet libero et. Fugit, quisquam. Vero, cum et reiciendis doloremque aliquam
+                                    iure minima velit asperiores ipsam delectus!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How much does premium cost?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laborum quo earum
+                                    nihil eveniet libero et. Fugit, quisquam. Vero, cum et reiciendis doloremque aliquam
+                                    iure minima velit asperiores ipsam delectus!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Which devices can I use Flowsy?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laborum quo earum
+                                    nihil eveniet libero et. Fugit, quisquam. Vero, cum et reiciendis doloremque aliquam
+                                    iure minima velit asperiores ipsam delectus!
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    How do I set a sleep timer?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laborum quo earum
+                                    nihil eveniet libero et. Fugit, quisquam. Vero, cum et reiciendis doloremque aliquam
+                                    iure minima velit asperiores ipsam delectus!
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                    Where can I use flowsy?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laborum quo earum
+                                    nihil eveniet libero et. Fugit, quisquam. Vero, cum et reiciendis doloremque aliquam
+                                    iure minima velit asperiores ipsam delectus!
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                    How do I cancel my subscription?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laborum quo earum
+                                    nihil eveniet libero et. Fugit, quisquam. Vero, cum et reiciendis doloremque aliquam
+                                    iure minima velit asperiores ipsam delectus!
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                                    How do I delete my account?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laborum quo earum
+                                    nihil eveniet libero et. Fugit, quisquam. Vero, cum et reiciendis doloremque aliquam
+                                    iure minima velit asperiores ipsam delectus!
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+                                    Benefits of Meditation?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laborum quo earum
+                                    nihil eveniet libero et. Fugit, quisquam. Vero, cum et reiciendis doloremque aliquam
+                                    iure minima velit asperiores ipsam delectus!
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
+                                    Where should I meditate?
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laborum quo earum
+                                    nihil eveniet libero et. Fugit, quisquam. Vero, cum et reiciendis doloremque aliquam
+                                    iure minima velit asperiores ipsam delectus!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- join club -->
+    <section class="join-club py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="join-club-content text-center" data-aos="fade-up">
+                        <h2 data-aos="fade-up">Join the club</h2>
+                        <p data-aos="fade-up">Get the latest news and offers delivered straight to your inbox.</p>
+                        <form action="" class="mt-4" data-aos="fade-up">
+                            <input type="text" class="form-control
+                            rounded-pill mb-3 w-50 mx-auto" name="" id="">
+                        </form>
+                        <a href="#" class="btn btn-dark px-5 py-2 rounded-pill" data-aos="fade-up">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <section class="footer py-5">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="footer-logo">
+                            <img src="img/f-logo.png" alt="">
+                        </div>
+                        <div class="footer-items mt-4">
+                            <ul class="list-unstyled m-0 p-0">
+                                <li class="d-inline-block me-2">
+                                    <a href="" class="text-dark text-decoration-none">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="d-inline-block me-2">
+                                    <a href="" class="text-dark text-decoration-none">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="d-inline-block me-2">
+                                    <a href="" class="text-dark text-decoration-none">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li class="d-inline-block me-2">
+                                    <a href="" class="text-dark text-decoration-none">
+                                        <i class="fab fa-tiktok"></i>
+                                    </a>
+                                </li>
+                                <li class="d-inline-block me-2">
+                                    <a href="" class="text-dark text-decoration-none">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="d-inline-block me-2">
+                                    <a href="" class="text-dark text-decoration-none">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5 class="fw-bold">
+                                    Learn
+                                </h5>
+                                <ul class="list-unstyled">
+                                    <li class="my-3">
+                                        <a href="" class="text-dark text-decoration-none">
+                                            Join
+                                        </a>
+                                    </li>
+                                    <li class="my-3">
+                                        <a href="" class="text-dark text-decoration-none">
+                                            The App
+                                        </a>
+                                    </li>
+                                    <li class="my-3">
+                                        <a href="" class="text-dark text-decoration-none">
+                                            Mission
+                                        </a>
+                                    </li>
+                                    <li class="my-3">
+                                        <a href="" class="text-dark text-decoration-none">
+                                            Premium
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <h5 class="fw-bold">
+                                    Help
+                                </h5>
+                                <ul class="list-unstyled">
+                                    <li class="my-3">
+                                        <a href="" class="text-dark text-decoration-none">
+                                            Contact
+                                        </a>
+                                    </li>
+                                    <li class="my-3">
+                                        <a href="" class="text-dark text-decoration-none">
+                                            FAQ's
+                                        </a>
+                                    </li>
+                                    <li class="my-3">
+                                        <a href="" class="text-dark text-decoration-none">
+                                            Terms
+                                        </a>
+                                    </li>
+                                    <li class="my-3">
+                                        <a href="" class="text-dark text-decoration-none">
+                                            Privacy
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="text-center text-md-end">
+                            <img src="img/QR Code.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- slick -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+        <!-- aos -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- main js -->
+        <script src="js/main.js"></script>
 </body>
 
 </html>

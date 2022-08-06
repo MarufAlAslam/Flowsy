@@ -42,6 +42,10 @@ header {
     font-size: 70px;
 }
 
+.fs-14 {
+    font-size: 14px;
+}
+
 .fs-20 {
     font-size: 20px
 }
@@ -89,4 +93,254 @@ header {
 .fa-star {
     color: #F1A713;
     font-size: 13px;
+}
+
+
+.premium {
+    background: url("../img/Group\ 6839.png");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio-custom {
+    height: 25px;
+    width: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.radio-custom.active .inner {
+    background: white;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+}
+
+
+.premium label {
+    width: 30%;
+    background: #1C1C1C;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.premium form {
+    margin-top: 20px;
+}
+
+.inner {
+    position: relative;
+    top: 0.3px;
+}
+
+.premium form .btn.btn-light.w-50.mt-4 {
+    width: 30% !important;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+button:focus {
+    outline: unset !important;
+    box-shadow: unset !important;
+}
+
+body {
+    background-color: #F6F6F6;
+}
+
+.accordion-item {
+    margin-top: 10px;
+    border: unset;
+    background-color: transparent;
+}
+
+.accordion-button {
+    border-radius: 30px !important;
+}
+
+.footer-items i {
+    font-size: 20px;
+}
+
+.btn {
+    outline: unset !important;
+    box-shadow: unset !important;
+}
+
+.navbar-toggler {
+    box-shadow: unset !important;
+    border: unset !important;
+    outline: unset !important;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar.navbar-expand-lg.bg-dark.py-3.navbar-dark.rounded-pill {
+        border-radius: 15px !important;
+    }
+
+    nav form.d-flex {
+        justify-content: space-between;
+    }
+
+    .icons.d-flex.justify-content-center.d-block.d-lg-none.align-items-center {
+        width: 60%;
+        justify-content: space-between !important;
+        padding-right: 30px;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid white;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        padding-bottom: 10px;
+        position: relative;
+        /* padding-top: 10px; */
+    }
+
+    .nav-link::after {
+        /* color: ; */
+        content: "\f105";
+        font-family: fontawesome;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    header {
+        min-height: auto;
+    }
+
+    .bottom {
+        position: unset;
+        margin: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .top-nav {
+        position: unset;
+        width: 100%;
+        left: 0;
+        top: 20px;
+        z-index: 100;
+        margin-bottom: 20px;
+    }
+
+    .radio-custom {
+        height: 25px;
+        min-width: 25px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+
+    .premium label {
+        width: 80%;
+        background: #1C1C1C;
+        padding: 15px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    .col-md-6.offset-md-3 {
+        margin: 0;
+        flex: 0 0 100%;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    nav form.d-flex {
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .icons.d-flex.justify-content-center.d-block.d-lg-none.align-items-center {
+        width: 100%;
+        margin-bottom: 25px;
+        align-items: center !important;
+        text-align: center;
+        padding: 0;
+    }
+
+
+
+    .container-fluid.px-5 {
+        padding: 0 15px !important;
+    }
+
+    .main-title {
+        font-size: 40px;
+    }
+
+
+
+    .btn.btn-light.px-5.py-3.rounded-pill {
+        padding: 10px 20px !important;
+        font-size: 14px;
+    }
+
+    .w-75.mx-auto {
+        width: 100% !important;
+        font-size: 16px;
+    }
+
+    .cards.py-5 {
+        padding-top: 0 !important;
+    }
+
+    .card.pt-5.px-5 {
+        padding-top: 0 !important;
+    }
+
+    .premium label {
+        width: 100%;
+        background: #1C1C1C;
+        padding: 15px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+
+
+    .premium form .btn.btn-light.w-50.mt-4 {
+        width: 100% !important;
+        padding: 10px;
+        border-radius: 30px;
+        font-size: 20px;
+    }
+
+    .form-control.rounded-pill.mb-3.w-50.mx-auto {
+        width: 100% !important;
+    }
+
+    .join-club .btn.btn-dark.px-5.py-2.rounded-pill {
+        width: 100%;
+    }
+
+    .footer.py-5 .col-md-4 {
+        margin-top: 30px;
+    }
 }
