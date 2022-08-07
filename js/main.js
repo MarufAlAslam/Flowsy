@@ -41,12 +41,13 @@ $('.slider').slick({
 $('.slider1').slick({
     dots: false,
     infinite: true,
-    speed: 300,
-    arrows: true,
+    speed: 5000,
+    cssEase: 'linear',
+    // arrows: true,
     autoplay: true,
-    autoplaySpeed: 3000,
-    prevArrow: '<button class="btn prevBtn"><i class="bi bi-chevron-left"></i></button>',
-    nextArrow: '<button class="btn nextBtn"><i class="bi bi-chevron-right"></i></button>',
+    autoplaySpeed: 0,
+    // prevArrow: '<button class="btn prevBtn"><i class="bi bi-chevron-left"></i></button>',
+    // nextArrow: '<button class="btn nextBtn"><i class="bi bi-chevron-right"></i></button>',
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
@@ -107,3 +108,17 @@ $('.audioPlayer').click(function () {
 })
 
 
+
+
+
+$('.navbar-toggler').click(function () {
+    $('this').toggleClass('active');
+    $('.navbar.navbar-expand-lg.bg-dark.py-3.navbar-dark.rounded-pill').toggleClass('active')
+    $('.top-nav').toggleClass('active')
+})
+
+
+$('.premium label').click(function () {
+    $('.premium label').removeClass('active')
+    $(this).addClass('active')
+})
