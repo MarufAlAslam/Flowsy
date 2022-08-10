@@ -111,14 +111,23 @@ $('.audioPlayer').click(function () {
 
 
 
-$('.navbar-toggler').click(function () {
-    $('this').toggleClass('active');
-    $('.navbar.navbar-expand-lg.bg-dark.py-3.navbar-dark.rounded-pill').toggleClass('active')
-    $('.top-nav').toggleClass('active')
-})
+// $('.navbar-toggler').click(function () {
+//     $('this').toggleClass('active');
+//     $('.navbar.navbar-expand-lg.bg-dark.py-3.navbar-dark.rounded-pill').toggleClass('active')
+//     $('.top-nav').toggleClass('active')
+// })
 
 
 $('.premium label').click(function () {
     $('.premium label').removeClass('active')
     $(this).addClass('active')
 })
+
+$('.navbar-toggler').click(function () {
+    $('.mobileMenu').addClass('active')
+})
+
+$('.btn.newMenuCloser').click(function () {
+    $('.mobileMenu').removeClass('active')
+})
+
