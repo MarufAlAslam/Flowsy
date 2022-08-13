@@ -124,7 +124,8 @@ $('.premium label').click(function () {
 })
 
 $('.navbar-toggler').click(function () {
-    $('.mobileMenu').addClass('active')
+    $('.mobileMenu').toggleClass('active')
+    $(this).toggleClass('active')
 })
 
 $('.btn.newMenuCloser').click(function () {
