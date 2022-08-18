@@ -48,7 +48,7 @@ $('.slider1').slick({
     autoplaySpeed: 0,
     // prevArrow: '<button class="btn prevBtn"><i class="bi bi-chevron-left"></i></button>',
     // nextArrow: '<button class="btn nextBtn"><i class="bi bi-chevron-right"></i></button>',
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
         {
